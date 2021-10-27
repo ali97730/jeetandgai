@@ -1,0 +1,37 @@
+{
+  "name": "OneNationOneHealth",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@emotion/react": "^11.4.1",
+    "@emotion/styled": "^11.3.0",
+    "@mui/material": "^5.0.2",
+    "@vonage/server-sdk": "^2.10.10",
+    "bcryptjs": "^2.4.3",
+    "cloudinary": "^1.26.3",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "file-saver": "^2.0.5",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.0.3",
+    "multer": "^1.4.3",
+    "nodemailer": "^6.6.3",
+    "react-google-location": "^1.2.2",
+    "twilio": "^3.69.0",
+    "validator": "^13.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
